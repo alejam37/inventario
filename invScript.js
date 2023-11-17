@@ -1,3 +1,7 @@
+function redirectToProductPage(productId) {
+    window.location.href = 'verProducto.html?productId=' + productId;
+}
+
 document.getElementById('button-menu').addEventListener('click', function() {
     var menu = document.getElementById('side-menu');
     menu.style.width = menu.style.width === '350px' ? '0' : '350px';
