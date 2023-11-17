@@ -25,7 +25,7 @@
         <div class="image-small"><img src="ex.png" alt="Imagen del producto"></div>
         <div class="image-small"><img src="ex.png" alt="Imagen del producto"></div>
       </div>
-      <div class="image-large"><img src="ex.png" alt="Imagen del producto"></div>
+      <div class="image-large"><img id="productImage" alt="Product Image"></div>
     </div>
     <div class="section2">
       <div style="margin-left: auto;">
@@ -96,7 +96,7 @@
       <img src="icon_inf.png">
     </div>
     <div>
-      <a href="login.html">GENERAR INFORME</a>
+      <a href="informe.html">GENERAR INFORME</a>
     </div>
   </div>
   <div class="side-nav-block">
@@ -112,7 +112,7 @@
       <img src="icon_product.png">
     </div>
     <div>
-      <a href="login.html">PRODUCTOS</a>
+      <a href="inventario.html">PRODUCTOS</a>
     </div>
   </div>
   <div class="side-nav-block">
@@ -120,13 +120,17 @@
       <img src="icon_prov.png">
     </div>
     <div>
-      <a href="login.html">PROVEEDORES</a>
+      <a href="proveedor.html">PROVEEDORES</a>
     </div>
   </div>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 </div>
 
 <script src="verProdScript.js"></script>
+
+<script>
+  window.onload = displayProductImage;
+</script>
 
 </body>
 </html>
