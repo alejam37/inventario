@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visualización Productos</title>
+<link rel="stylesheet" href="verProdStyle.css">
+</head>
+<body>
+
+<div class="header">
+    <button class="button-menu" id="button-menu"><img src="menu.png" width="30px" height="30px"></button>
+    <div class="search-container">
+      <input type="text" class="search-bar">
+      <button onclick="search()"><img src="search.png" width="20px" height="20px"></button>
+    </div>
+    <span>Inventarix 3.0</span>
+</div>
+
+<div class="product-container">
+  <div class="images-section">
+    <div class="section1">
+      <div class="images-small">
+        <div class="image-small"><img src="ex.png" alt="Imagen del producto"></div>
+        <div class="image-small"><img src="ex.png" alt="Imagen del producto"></div>
+        <div class="image-small"><img src="ex.png" alt="Imagen del producto"></div>
+      </div>
+      <div class="image-large"><img src="ex.png" alt="Imagen del producto"></div>
+    </div>
+    <div class="section2">
+      <div style="margin-left: auto;">
+        <button class="buy-button">Comprar</button>
+      </div>
+      <div style="padding-left: 30px;">
+        <button class="history-button">Historial</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="info-section">
+    <h1 style="text-align: right;">Nombre del Producto</h2>
+    <h2>Descripción</h2>
+    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <div class="stock-info">
+      <h3 style="color: green;"><strong>Cantidad Disponible:</strong></p>
+        <h3 style="margin-left: 30px;">XX</h3>
+      <h3><strong>Ubicación Bodega:</strong></p>
+        <h3 style="margin-left: 30px;">XX-XX-XX</h3>
+    </div>
+  </div>
+</div>
+
+<div id="side-menu" class="side-nav">
+  <div class="side-nav-top">
+    <div class="side-nav-top1">
+      <div>
+        <img src="icon_user.png">
+      </div>
+      <div>
+        <h2>Hola Usuario</h2>
+      </div>
+    </div>
+    <div class="side-nav-top2">
+      <div>
+        <h2 class="date" id="current-date"></h2>
+      </div>
+      <div>
+        <h2 class="time" id="current-time"></h2>
+      </div>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_home.png">
+    </div>
+    <div>
+      <a href="login.html">INICIO</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_notification.png">
+    </div>
+    <div>
+      <a href="login.html">NOTIFICACIONES</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_inf.png">
+    </div>
+    <div>
+      <a href="login.html">GENERAR INFORME</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_history.png">
+    </div>
+    <div>
+      <a href="login.html">HISTORIAL</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_product.png">
+    </div>
+    <div>
+      <a href="login.html">PRODUCTOS</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_prov.png">
+    </div>
+    <div>
+      <a href="login.html">PROVEEDORES</a>
+    </div>
+  </div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+
+<script src="verProdScript.js"></script>
+
+</body>
+</html>

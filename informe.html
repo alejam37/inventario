@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generar Informe</title>
+<link rel="stylesheet" href="infStyle.css">
+</head>
+<body>
+
+<div class="header">
+    <button class="button-menu" id="button-menu"><img src="menu.png" width="30px" height="30px"></button>
+    <div class="search-container">
+      <input type="text" class="search-bar">
+      <button onclick="search()"><img src="search.png" width="20px" height="20px"></button>
+    </div>
+    <span>Inventarix 3.0</span>
+</div>
+
+<div class="vertical-section divider">
+
+    <h1>OPCIONES DE INFORME</h1><br>
+    <div class="left-aligner">
+        <h2 class="h2">REUNIÓN A PRESENTAR</h2>
+        <input type="text">
+        <h2 class="h2">BODEGA</h2>
+        <input type="text">
+        <h2 class="h2">SEMESTRE</h2>
+        <input type="text"><br><br>
+    </div>
+    <h2 class="h2">SELECCIONE ITEMS DEL INFORME</h2>
+    <div class="left-aligner">
+        <div>
+            <input type="checkbox" id="checkbox1" name="checkbox1">
+            <label for="checkbox1">GRÁFICAS ESTADÍSTICAS</label>
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox2" name="checkbox2">
+            <label for="checkbox2">HISTORIAL</label>
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox3" name="checkbox3">
+            <label for="checkbox3">PÉRDIDAS</label>
+        </div>
+    </div>
+</div>
+
+<div class="vertical-section">
+    <h1>INFORME</h1>
+    <img src="ex.png" class="img-placeholder">
+</div>
+
+<div id="side-menu" class="side-nav">
+    <div class="side-nav-top">
+      <div class="side-nav-top1">
+        <div>
+          <img src="icon_user.png">
+        </div>
+        <div>
+          <h2>Hola Usuario</h2>
+        </div>
+      </div>
+      <div class="side-nav-top2">
+        <div>
+          <h2 class="date" id="current-date"></h2>
+        </div>
+        <div>
+          <h2 class="time" id="current-time"></h2>
+        </div>
+      </div>
+    </div>
+    <div class="side-nav-block">
+      <div>
+        <img src="icon_home.png">
+      </div>
+      <div>
+        <a href="login.html">INICIO</a>
+      </div>
+    </div>
+    <div class="side-nav-block">
+      <div>
+        <img src="icon_notification.png">
+      </div>
+      <div>
+        <a href="login.html">NOTIFICACIONES</a>
+      </div>
+    </div>
+    <div class="side-nav-block">
+      <div>
+        <img src="icon_inf.png">
+      </div>
+      <div>
+        <a href="login.html">GENERAR INFORME</a>
+      </div>
+    </div>
+    <div class="side-nav-block">
+      <div>
+        <img src="icon_history.png">
+      </div>
+      <div>
+        <a href="login.html">HISTORIAL</a>
+      </div>
+    </div>
+    <div class="side-nav-block">
+      <div>
+        <img src="icon_product.png">
+      </div>
+      <div>
+        <a href="login.html">PRODUCTOS</a>
+      </div>
+    </div>
+    <div class="side-nav-block">
+      <div>
+        <img src="icon_prov.png">
+      </div>
+      <div>
+        <a href="login.html">PROVEEDORES</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </div>
+
+<script src="infScript.js"></script>
+
+</body>
+</html>

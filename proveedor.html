@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proveedores</title>
+<link rel="stylesheet" href="provStyle.css">
+</head>
+<body>
+  
+<div class="header">
+    <button class="button-menu" id="button-menu"><img src="menu.png" width="30px" height="30px"></button>
+    <div class="search-container">
+      <input type="text" class="search-bar">
+      <button onclick="search()"><img src="search.png" width="20px" height="20px"></button>
+    </div>
+    <span>Inventarix 3.0</span>
+</div>      
+
+<div class="container">
+    <div class="suppliers">
+        <h2 class="title">Proveedores</h2>
+        <ul>
+        </ul>
+        <div style="display:flex; justify-content:space-evenly;">
+          <div>
+            <button class="button2">Eliminar</button>
+          </div>
+          <div>
+            <button class="button2">Modificar</button>
+          </div>
+        </div>
+    </div>
+    <div class="new-supplier">
+        <h2 class="title">Nuevo Proveedor</h2>
+        <form>
+            <label for="name">Nombre</label>
+            <input type="text" id="name">
+            
+            <label for="type">Tipo</label>
+            <input type="text" id="type">
+            
+            <label for="email">Correo</label>
+            <input type="email" id="email">
+            
+            <label for="address">Dirección</label>
+            <input type="text" id="address">
+            <button class="button1" type="submit">Agregar</button>
+        </form>
+    </div>
+</div>
+
+<div id="side-menu" class="side-nav">
+  <div class="side-nav-top">
+    <div class="side-nav-top1">
+      <div>
+        <img src="icon_user.png">
+      </div>
+      <div>
+        <h2>Hola Usuario</h2>
+      </div>
+    </div>
+    <div class="side-nav-top2">
+      <div>
+        <h2 class="date" id="current-date"></h2>
+      </div>
+      <div>
+        <h2 class="time" id="current-time">14:36 PM</h2>
+      </div>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_home.png">
+    </div>
+    <div>
+      <a href="login.html">INICIO</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_notification.png">
+    </div>
+    <div>
+      <a href="login.html">NOTIFICACIONES</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_inf.png">
+    </div>
+    <div>
+      <a href="login.html">GENERAR INFORME</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_history.png">
+    </div>
+    <div>
+      <a href="login.html">HISTORIAL</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_product.png">
+    </div>
+    <div>
+      <a href="login.html">PRODUCTOS</a>
+    </div>
+  </div>
+  <div class="side-nav-block">
+    <div>
+      <img src="icon_prov.png">
+    </div>
+    <div>
+      <a href="login.html">PROVEEDORES</a>
+    </div>
+  </div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+
+<script src="provScript.js"></script>
+
+</body>
+</html>
